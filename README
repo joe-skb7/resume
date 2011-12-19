@@ -1,0 +1,48 @@
+Notes
+-----
+
+- used last version of moderncv (0.14); system version of moderncv was replaced by new one
+- when converting my photo from .png to .eps (with GIMP) used 106.37 as width and heigh
+- to add some cyrillic text use:
+  - %\usepackage[ukrainian,USenglish]{babel}
+  - % \cvitem{Ukrainian Name}{\foreignlanguage{ukrainian}{Проценко Семен Вiкторович}}
+
+
+Installed TeX packages
+----------------------
+
+joe@joe-pc:~$ aptitude search ~itexlive | grep -vP 'i A' | sed 's/ - .*//' | sed 's/i   //'
+texlive
+texlive-common
+texlive-doc-base
+texlive-fonts-recommended
+texlive-fonts-recommended-doc
+texlive-lang-cyrillic
+texlive-latex-base-doc
+texlive-latex-extra
+texlive-latex-extra-doc
+texlive-latex-recommended
+texlive-latex-recommended-doc
+texlive-luatex
+texlive-metapost-doc
+texlive-pictures-doc
+texlive-pstricks-doc
+
+
+Links
+-----
+
+http://mydebianblog.blogspot.com/2009/03/latex-cv-latex.html
+http://www.linux.org.ru/forum/general/4219163
+http://sovety.blogspot.com/2008/01/latex-debian.html
+http://homepages.math.uic.edu/~hurder/math589/CVexamples/
+
+Curriculum Vitae HOWTOs:
+http://www.wikijob.co.uk/wiki/example-cv-resume-template
+http://itspeciality.blogspot.com/2007/05/blog-post.html
+http://www.mem.com.ru/
+http://www.homebusiness.ru/job/st7.html
+http://planetahr.ru/publication/1826
+http://www.portnov.com/FreeResumeSample/freeJobResumeSamples.html
+http://alexott.net/ru/alexott-cv-ru.html
+http://dside.dyndns.org/cv/cvrus.html
