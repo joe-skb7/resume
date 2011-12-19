@@ -1,37 +1,19 @@
+It's my curriculum vitae. You can use it like example for you ones.
+For build instructions see `INSTALL' file.
+
+
 Notes
 -----
 
-- used last version of moderncv (0.14); system version of moderncv was replaced by new one
-- when converting my photo from .png to .eps (with GIMP) used 106.37 as width and heigh
 - to add some cyrillic text use:
   - %\usepackage[ukrainian,USenglish]{babel}
-  - % \cvitem{Ukrainian Name}{\foreignlanguage{ukrainian}{Проценко Семен Вiкторович}}
-
-
-Installed TeX packages
-----------------------
-
-joe@joe-pc:~$ aptitude search ~itexlive | grep -vP 'i A' | sed 's/ - .*//' | sed 's/i   //'
-texlive
-texlive-common
-texlive-doc-base
-texlive-fonts-recommended
-texlive-fonts-recommended-doc
-texlive-lang-cyrillic
-texlive-latex-base-doc
-texlive-latex-extra
-texlive-latex-extra-doc
-texlive-latex-recommended
-texlive-latex-recommended-doc
-texlive-luatex
-texlive-metapost-doc
-texlive-pictures-doc
-texlive-pstricks-doc
+  - % \cvitem{Ukrainian Name}{\foreignlanguage{ukrainian}{Дорошенко Петро}}
 
 
 Links
 -----
 
+Some useful links:
 http://mydebianblog.blogspot.com/2009/03/latex-cv-latex.html
 http://www.linux.org.ru/forum/general/4219163
 http://sovety.blogspot.com/2008/01/latex-debian.html
