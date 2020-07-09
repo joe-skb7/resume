@@ -18,6 +18,7 @@ $(NAME).ps: $(NAME).dvi
 
 $(NAME).dvi: $(NAME).tex
 	$(LATEX) $(NAME).tex
+	$(LATEX) $(NAME).tex
 
 clean:
 	rm -f $(NAME).aux $(NAME).dvi $(NAME).log $(NAME).ps $(NAME).out $(NAME).tex.backup
