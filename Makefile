@@ -7,6 +7,9 @@ all: $(NAME)
 
 $(NAME): $(NAME).pdf
 
+#$(NAME).pdf:
+#	rubber -m xelatex -W all $(NAME).tex
+
 $(NAME).pdf: $(NAME).ps
 	$(PS2PDF) $(NAME).ps $(NAME).pdf
 

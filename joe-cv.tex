@@ -6,97 +6,98 @@
 % Personal data
 \firstname{Sam}
 \familyname{Protsenko}
-\title{Software Developer}
-\address{84333, Ukraine, Kramatorsk}{Kirilkina st. 26/61}
-\mobile{+3 8 097 5277313}
-\phone{8 (06264) 6-70-10}
+\title{Software Engineer}
+\address{Ukraine, Kyiv}{}
+\mobile{+38 097 5277313}
 \email{joe.skb7@gmail.com}
 \photo[64pt][0.4pt]{photo}
 
 \definecolor{web}{rgb}{0.2,0.2,0.2}
 
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
 % Content
 \begin{document}
+
+% Remove "Bibliography" title in "thebibliography" block
+\renewcommand*{\bibliographyhead}[1]{}
+
 \maketitle
 
-\section{Personal Information}
-\cvitem{Date of Birth}{June 5, 1987}
-\cvitem{Place of Birth}{Kramatorsk, Ukraine}
-\cvitem{Nationality}{Ukraininan}
-\cvitem{Marital Status}{Single}
-
 \section{Summary}
-Motivated software engineer with experience in crossplatform development and deploying with Qt, \\pure C and C++.\\
-Good knowledge of assident tools such as Git, Doxygen, Valgrind etc.\\
-Familiarity with Linux system, utilities, Bash scripting.\\
-Glad to extend my knowledge in these areas and also to acquire new ones.\\
-I'm not looking for a new job right now, but tend to consider attractive opportunities.
 
-\section{Education}
-\cventry{2011--2012}{Diploma mill}{``INTUIT'' Internet University}{Distance education}{}
-{\textit{Subject}: The C++ Programming Language for professionals
-\newline \textit{Certificate}: {\color{web} \url{http://www.intuit.ru/diplom/ADYGaySyhoFA/A00166000/}}}
-\cventry{2010--2010}{Diploma mill}{``INTUIT'' Internet University}{Distance education}{}
-{\textit{Subject}: C++ programming
-\newline \textit{Certificate}: {\color{web} \url{http://www.intuit.ru/diplom/ADYGaySyhoFA/A00091223/}}}
-\cventry{2008--2009}{Specialist}{Donbas State Mechanical Engineering Academy}{Kramatorsk}{}
-{\textit{Speciality}: Automation of technological processes\\
- \textit{Thesis Subject}: Designing and building of electric drive with frequency control for stock damper test bench.}
-\cventry{2004--2008}{Bachelor}{Donbas State Mechanical Engineering Academy}{Kramatorsk}{}
-{\textit{Speciality}: Automation of technological processes}
+Software engineer with more than 10 years of professional experience.
+Main area of expertise is Linux kernel, bootloaders, firmwares and system level
+user space Embedded programming on ARM-based devices. For the last 5 years has
+been contributing to open-source projects and involved with upstreaming
+activity. Has prior experience with cross-platform applications development in
+C++/Qt, algorithms and electronics. Active open-source community member, mentor,
+speaker.
 
 \section{Experience}
-\cventry{2012--Present}{Linux Developer}{GlobalLogic}{Kiev}{}{Kernel-space development and linux subsystems (full time work).}
-\cventry{2009--2012}{Software Developer}{AlterEGO}{Kramatorsk}{}{Design and coding of crossplatform software (full time work).}
-\cventry{2007--2008}{Software Developer}{AlterEGO}{Kramatorsk}{}{Design and coding of Windows software as part-time worker.}
+\cventry{2018--2020}{Team Leader}{GlobalLogic}{Kyiv}{}
+  {Supporting the \textsc{BeagleBoard X15} board and upstreaming work.
+   \begin{itemize}
+     \item Porting Android to a new board and upstreaming it with a small team:
+           \cite{a}
+     \item Adopting VPN from upstream kernel in AOSP: \cite{b}
+     \item Implementing Android 10 boot sequence: \cite{c}
+   \end{itemize}}
+\cventry{2012--2018}{Software Engineer}{GlobalLogic}{Kyiv}{}
+  {Platform development in Linux kernel and bootloaders, upstreaming.
+   \begin{itemize}
+     \item Implementing and supporting drivers: \cite{d}
+     \item Maintaining boot sequence and fastboot in U-Boot: \cite{e}
+     \item Board bring ups
+     \item Bug fixing (drivers, device tree, bootloader)
+     \item Migrating to new kernel versions
+     \item Implementing XIP boot from NOR flash boot (automotive)
+     \item System boot time optimizations (automotive)
+   \end{itemize}
+  }
+\cventry{2009--2012}{Software Developer}{AlterEGO}{Kramatorsk}{}
+  {Cross-platform software design and coding.}
 
-\section{Languages}
-\cvlanguage{Russian}{Fluent}{My native language}
-\cvlanguage{Ukrainian}{Fluent}{My native language}
-\cvlanguage{English}{Pre-intermediate}{Speaking, reading and writing}
+\section{Education}
+\cventry{2004--2009}{Specialist degree}
+  {Donbas State Mechanical Engineering Academy}{Kramatorsk}{}
+  {\textit{Speciality}: Automation of technological processes}
 
 \section{Computer skills}
-\cvitem{Languages}{C, C++, Python, Bash, Objective-C (not active), Delphi/Pascal (not active)}
-\cvitem{Frameworks}{Qt, C/C++ Standard Library, Boost}
-\cvitem{Tools}{Git, CMake, Doxygen, Cppcheck, Valgrind, \LaTeX}
-\cvitem{Packages}{Maple, MATLAB, Maxima, Proteus}
-\cvitem{Platforms}{Linux, MacOS, Windows, DOS}
-\cvitem{Technologies}{Linux API, POSIX, Carbon/Cocoa, WinAPI, COM}
+\cvitem{Languages}{C, C++, Bash}
+\cvitem{Projects}{Linux kernel, U-Boot, Android}
+\cvitem{Architectures}{ARM32, AArch64, x86, STM32 (Cortex-M), MSP430}
 
-\section{Software}
-\cvitem{SecureTorrent}{Client for secure downloading data via torrents.
- \newline \textit{Role}: Developing of client application
- \newline \textit{Technologies}: Qt}
-\cvitem{libCenterObject}{Library for recognizing central object on Photoshop RAW image.
- \newline \textit{Role}: Main developer
- \newline \textit{Technologies}: CMake, cross-compiling, C++ Standard Library}
-\cvitem{iOS OCR}{Text recognition on iPhone/iPad (by screenshots).
- \newline \textit{Role}: Main developer
- \newline \textit{Technologies}: C, CoreFoundation, POSIX API}
-\cvitem{FlashDriveLocker}{Application for hiding user data on Flash-drive.
- \newline \textit{Role}: Developing of cross-platform system modules (USB s/n detection etc)
- \newline \textit{Technologies}: Qt, WinAPI, Linux API/POSIX API, IOKit, CoreFoundation}
-\cvitem{PokerRoom}{Poker room system (including server and client with changeable interface).
- \newline \textit{Role}: Developing of client application
- \newline \textit{Technologies}: Qt, QtQuick (QML), Networking}
+\section{Languages}
+\cvlanguage{Ukrainian}{Fluent}{My native language}
+\cvlanguage{Russian}{Fluent}{My native language}
+\cvlanguage{English}{Upper-intermediate}{Speaking, reading and writing}
 
-\section{Publications}
-\cvitem{}{2010}
-\cvitem{Software Development}
-{\textit{Model-View-Presenter implementation in Qt.}
-\newline {\color{web} \url{http://habrahabr.ru/blogs/qt_software/107698/}}}
+\pagebreak
 
 \section{Other Activities}
-\cvitem{Sep 2011--Today}{Maintainer of ``INSTEAD'' Debian package. Page of this package available at {\color{web} \url{http://packages.debian.org/sid/instead}}}
-\cvitem{Feb 2011--Today}{Translator and mentor of ``Qt in Education Course Material'' project that available at {\color{web} \url{http://lorcode.org/wiki/Qt_in_Education_Course_Material}}}
 
-\section{Interests}
-\cvline{Guitar}{\small I've been playing electric guitar since schooldays}
-\cvline{Electornics}{\small Guitar effects, microcontrollers, electric drives and household appliances}
-\cvline{GNU/Linux}{\small Sometimes I fall into nocturnal research and hacking on Linux}
-\cvline{Books}{\small Science fiction, classics and some fantasy}
-\cvline{Bicycling}{\small I like to ride my bike around the purlieu}
-\cvline{Music}{\small Inspired by J.S.Bach, Vivaldi, Dream Theater, Deep Purple, Pink Floyd and many others}
-\cvline{Mountains}{\small Hiking at Caucasus Mountains, climbing, outdoor roaming}
+\cvitem{2011--Today}{Maintainer of ``INSTEAD'' Debian package: \cite{f}}
+\cvitem{2015--Today}{Active member on StackOverflow (>10k reputation): \cite{g}}
+\cvitem{2019}{Organizer of ``Root Linux Conference'' in Kyiv: \cite{h}}
+\cvitem{2018--Today}{Creator and instructor of Linux kernel course: \cite{i}}
+\cvitem{2017--2019}{Speaker at Linaro and GlobalLogic events}
+
+\section{References}
+
+\begin{thebibliography}{9}
+\bibitem{a} \color{web} \url{https://android-review.googlesource.com/q/author:protsenko}
+\bibitem{b} \color{web} \url{https://connect.linaro.org/resources/bkk19/bkk19-414/}
+\bibitem{c} \color{web} \url{https://connect.linaro.org/resources/san19/san19-217/}
+\bibitem{d} \color{web} \nolinkurl{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=author&q=protsenko}
+\bibitem{e} \color{web} \url{https://gitlabdenx.de/u-boot/u-boot/-/commits/master?search=protsenko}
+\bibitem{f} \color{web} \url{http://packages.debian.org/sid/instead}
+\bibitem{g} \color{web} \url{https://stackoverflow.com/users/3866447/sam-protsenko}
+\bibitem{h} \color{web} \url{https://linux.globallogic.com/}
+\bibitem{i} \color{web} \url{https://github.com/joe-skb7/kernel-lectures}
+\end{thebibliography}
 
 \end{document}
