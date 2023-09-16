@@ -1,4 +1,4 @@
-NAME := joe-cv
+NAME := resume
 
 all: $(NAME).pdf
 
