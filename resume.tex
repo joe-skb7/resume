@@ -1,13 +1,13 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,letterpaper,sans]{moderncv}
 \moderncvtheme{classic}
 \usepackage[scale=0.8]{geometry}
 
 % Personal data
-\firstname{Sam}
+\firstname{Semen}
 \familyname{Protsenko}
 \title{Software Engineer}
-\address{Austin, TX}{}
-\mobile{(512) 986-2526}
+\address{Austin, TX, 78745}{}
+\mobile{+1 (512) 986-2526}
 \email{joe.skb7@gmail.com}
 \photo[64pt][0.4pt]{images/photo}
 \social[linkedin]{sam-protsenko-491b311b}
@@ -41,8 +41,11 @@ speaker.
 
 \section{Experience}
 \cventry{2020--Present}{Software Engineer}{Linaro}{}{}
-  {Linaro Consumer Group Kernel Team}
-\cventry{2018--2020}{Team Lead}{GlobalLogic}{Kyiv}{}
+  {Team: Linaro Consumer Group, Kernel Team. \newline{}
+   Role: Supporting the WinLink’s \textsc{E850-96} board. \newline{}
+   Activities: Board bring up, enabling it in mainline kernel and U-Boot,
+   upstreaming.}
+\cventry{2018--2020}{Team Lead}{GlobalLogic}{Kyiv, Ukraine}{}
   {Project: Texas Instruments (Linaro assignee for LCG). \newline{}
    Role: Supporting the \textsc{BeagleBoard X15} board and upstreaming work.
    \begin{itemize}
@@ -52,28 +55,35 @@ speaker.
      \item Implementing Android 10 boot sequence: \cite{c}
      \item Running Android 10 with mainline kernel on \textsc{BeagleBoard X15}
    \end{itemize}}
-\cventry{2012--2018}{Software Engineer}{GlobalLogic}{Kyiv}{}
+\cventry{2012--2018}{Software Engineer}{GlobalLogic}{Kyiv, Ukraine}{}
   {Projects: Texas Instruments (directly and as Linaro assignee for LEG and
    LMG), others. \newline{}
    Role: Platform development in Linux kernel and bootloaders, upstreaming.
    \begin{itemize}
+     \item Supporting Android kernel on TI OMAP4/OMAP5 SoC
+     \item Board bring ups, bug fixing, migrating to new kernel versions
      \item Implementing and supporting device drivers: \cite{d}
      \item Maintaining boot sequence and fastboot in U-Boot: \cite{e}
-     \item Board bring ups
-     \item Bug fixing (drivers, device tree, bootloader)
-     \item Migrating to new kernel versions
      \item Implementing XIP boot from NOR flash (automotive)
      \item System boot time optimizations (automotive)
-     \item Supporting Android kernel on TI OMAP4/OMAP5 SoC
    \end{itemize}
   }
-\cventry{2009--2012}{Software Developer}{AlterEGO}{Kramatorsk}{}
-  {Role: Cross-platform software design and coding (C++/Qt).}
+\cventry{2009--2012}{Software Developer}{AlterEGO}{Kramatorsk, Ukraine}{}
+  {Role: Cross-platform software design and coding (C++/Qt). \newline{}
+   Activities: Implementing optical character recognition, game clients,
+   interaction with web, apps for automating diverse tasks.}
+
+\pagebreak
 
 \section{Education}
-\cventry{2004--2009}{Specialist degree}
-  {Donbas State Mechanical Engineering Academy}{Kramatorsk}{}
-  {\textit{Speciality}: Automation of technological processes}
+\cventry{2008--2009}
+  {Master of Science in Computer Aided Engineering}
+  {\href{http://eng.dgma.donetsk.ua/}{\newline{}
+   Donbas State Mechanical Engineering Academy}}{Kramatorsk, Ukraine}{}{}
+\cventry{2004--2008}
+  {Bachelor of Science in Computer Engineering Technology}
+  {\href{http://eng.dgma.donetsk.ua/}{\newline{}
+   Donbas State Mechanical Engineering Academy}}{Kramatorsk, Ukraine}{}{}
 
 \section{Computer skills}
 \cvdoubleitem{Languages}{C, C++, Bash}{Projects}{Linux kernel, U-Boot, Android}
@@ -81,11 +91,9 @@ speaker.
 \cvdoubleitem{Tools}{GCC, GDB, Make, Git, Vim}{Hardware}{JTAG, scope, logical
                      analyzer}
 
-\pagebreak
-
 \section{Languages}
-\cvlanguage{Ukrainian}{Fluent}{My native language}
-\cvlanguage{English}{Upper-intermediate}{Speaking, reading and writing}
+\cvlanguage{Ukrainian}{Native or bilingual proficiency}{}
+\cvlanguage{English}{Professional working proficiency}{}
 
 \section{Other Activities}
 
