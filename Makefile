@@ -2,7 +2,7 @@ NAME := resume
 
 all: $(NAME).pdf
 
-$(NAME).pdf: $(NAME).tex images/photo.eps
+$(NAME).pdf: $(NAME).tex images/photo.jpg
 	@rubber -m xelatex -W all $(NAME).tex
 
 clean:
