@@ -1,15 +1,17 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
-\moderncvtheme{classic}
-\usepackage[scale=0.8]{geometry}
+%\moderncvcolor{blue}
+\moderncvstyle{classic}
+\usepackage[scale=0.82]{geometry}
 
 % Personal data
-\firstname{Semen}
+\firstname{Sam}
 \familyname{Protsenko}
 \title{Senior Software Engineer}
-\address{Austin, TX, 78745}{}
+\address{Austin, TX, United States}{}
 \mobile{+1 (512) 986-2526}
 \email{joe.skb7@gmail.com}
-\photo[64pt][0.4pt]{images/photo}
+\photo{images/photo}
+%\photo[64pt][0.4pt]{images/photo}
 \social[linkedin]{sam-protsenko}
 \social[github]{joe-skb7}
 
@@ -19,51 +21,56 @@
 \maketitle
 
 \section{Summary}
-
-Embedded software engineer with more than 10 years of professional experience.
-Main area of expertise is Linux kernel, bootloaders, firmwares and system level
-user space programming on ARM-based devices. For the last 5 years has been
-contributing to open-source projects and been involved with upstreaming
-activity. Has prior background in cross-platform applications development,
-algorithms and electronics. Active member of open-source community, mentor,
-speaker.
+Embedded software engineer with 15+ years of professional experience. For the
+last 10+ years have been contributing to open-source projects. Specialize in
+Linux kernel, bootloaders, firmware, and system level programming on ARM-based
+devices. Have 170+ patches accepted in the upstream Linux kernel, 250+ patches
+in U-Boot, and 500+ patches in open-source projects overall. Was a speaker at
+10+ conferences worldwide. Have $\sim$15,000 reputation on StackOverflow. A
+combination of hard skills in low-level programming, electronics, Linux
+ecosystem, and upstreaming enables me to solve complex cross-disciplinary tasks
+in the Embedded area.
 
 \section{Experience}
-\cventry{01/2025--Present}{Senior Software Engineer}{Linaro}{Austin, TX, USA}{}
-  {}
-\cventry{12/2022--12/2024}{Software Engineer}{Linaro}{Austin, TX, USA}{}
-  {}
-\cventry{07/2020--10/2022}{Software Engineer}{Linaro}{Kyiv, Ukraine}{}
-  {Team: Linaro Consumer Group, Kernel Team. \newline{}
-   Role: Supporting the WinLink’s \textsc{E850-96} board. \newline{}
-   Activities: Board bring up, enabling it in mainline kernel and U-Boot,
-   upstreaming.}
+\cventry{12/2022--Present}{Senior Software Engineer}{Linaro}{Austin, TX, USA}{}
+  {\begin{itemize}
+     \item Implemented and upstreamed kernel platform drivers for Exynos850
+     \item Enabled U-Boot support for E850-96 board and upstreamed it
+     \item Became a maintainer of Samsung drivers and Exynos850 SoC in U-Boot
+     \item Became a maintainer of Exynos850 SoC in upstream Linux kernel
+     \item Made major downstream Pixel 6 drivers functional in upstream kernel
+     \item Brought up U-Boot with XIP support on a novel chip with NV memory
+     \item Enabled EFI boot and ARM SystemReady for E850-96 board in U-Boot
+     \item Implemented Android OS boot using Android GBL from U-Boot on E850-96
+     \item Made Debian installation work on E850-96
+   \end{itemize}}
+\cventry{07/2020--11/2022}{Software Engineer}{Linaro}{Kyiv, Ukraine}{}
+  {\begin{itemize}
+     \item Brought up a new devboard from square one to feature complete
+     \item Made the vendor kernel, bootloader, and Android fully functional
+     \item Found and fixed more than 30 hardware bugs during the bring up
+     \item Created device tree, the clock driver and other drivers from scratch
+     \item Upstreamed all essential platform support to the Linux kernel
+   \end{itemize}}
 \cventry{05/2018--05/2020}{Team Lead}{GlobalLogic}{Kyiv, Ukraine}{}
-  {Project: Texas Instruments (Linaro assignee for LCG). \newline{}
-   Role: Supporting the \textsc{BeagleBoard X15} board and upstreaming work.
-   \begin{itemize}
-     \item Porting Android to a new board and upstreaming it with a small team
-     \item Adopting VPN from upstream kernel in AOSP
-     \item Implementing Android 10 boot sequence
-     \item Running Android 10 with mainline kernel on \textsc{BeagleBoard X15}
+  {\begin{itemize}
+     \item Managed a small team working on Android OS and Linux kernel
+     \item Adopted VPN from upstream kernel in Android
+     \item Ported Android to a new board and upstreamed it
+     \item Implemented Android 10 boot sequence in U-Boot
+     \item Managed to run Android 10 with mainline kernel on BeagleBoard X15
    \end{itemize}}
 \cventry{02/2012--05/2018}{Software Engineer}{GlobalLogic}{Kyiv, Ukraine}{}
-  {Projects: Texas Instruments (directly and as Linaro assignee for LEG and
-   LMG), others. \newline{}
-   Role: Platform development in Linux kernel and bootloaders, upstreaming.
-   \begin{itemize}
-     \item Supporting Android kernel on TI OMAP4/OMAP5 SoC
+  {\begin{itemize}
+     \item Supported Android kernel on Texas Instruments SoCs (OMAP4/5)
+     \item Implemented and maintained device drivers
+     \item Maintained the Android boot sequence code and fastboot in U-Boot
+     \item Implemented XIP boot from NOR flash (automotive)
      \item Board bring ups, bug fixing, migrating to new kernel versions
-     \item Implementing and supporting device drivers
-     \item Maintaining boot sequence and fastboot in U-Boot
-     \item Implementing XIP boot from NOR flash (automotive)
      \item System boot time optimizations (automotive)
-   \end{itemize}
-  }
+   \end{itemize}}
 \cventry{09/2009--01/2012}{Software Developer}{AlterEGO}{Kramatorsk, Ukraine}{}
-  {Role: Cross-platform software design and coding (C++/Qt). \newline{}
-   Activities: Implementing OCR, game clients, interaction with web, apps for
-   automating diverse tasks.}
+  {Implementing cross-platform applications in C++/Qt}
 
 \pagebreak
 
@@ -77,23 +84,22 @@ speaker.
   {\href{http://eng.dgma.donetsk.ua/}{\newline{}
    Donbass State Engineering Academy}}{Kramatorsk, Ukraine}{}{}
 
-\section{Computer skills}
-\cvdoubleitem{Languages}{C, C++, Bash}{Projects}{Linux kernel, U-Boot, Android}
-\cvdoubleitem{CPUs}{ARM32, AArch64, x86}{MCUs}{Exynos850, AM65x, AM57x, OMAP5,
-                                               OMAP4, STM32, MSP430}
-\cvdoubleitem{Tools}{GCC, GDB, Make, Git, Vim}{Hardware}{JTAG, scope, logical
-                     analyzer}
+\section{Personal Projects}
+\cventry{01/2019--01/2020}{Linux Kernel Course}{}{}{}
+  {Created and taught the Embedded Linux kernel course}
+\cventry{11/2018--01/2019}{Traffic Light System}{}{}{}
+  {Designed and built a traffic light system (hardware and software) for an
+   automotive hackathon}
+
+\section{Skills}
+\cvitem{Projects}{Linux kernel, U-Boot, Android, Debian, BusyBox}
+\cvitem{Components}{ARM, device drivers, device tree, bootloaders, upstreaming}
+\cvitem{Languages}{C, C++, ARM assembler, Bash}
+\cvitem{Electronics}{Soldering, hardware debugging, designing circuits and PCBs}
 
 \section{Languages}
-\cvlanguage{Ukrainian}{Native or bilingual proficiency}{}
 \cvlanguage{English}{Professional working proficiency}{}
-
-\section{Other Activities}
-
-\cvitem{2019}{Organizer of ``Root Linux Conference'' in Kyiv}
-\cvitem{2018--2022}{Creator and instructor of Linux kernel course}
-\cvitem{2017--2019}{Speaker at Linaro and GlobalLogic events}
-\cvitem{2015--Today}{Active member on StackOverflow (>10k reputation)}
-\cvitem{2011--2022}{Maintainer of ``INSTEAD'' Debian package}
+\cvlanguage{Ukrainian}{Native or bilingual proficiency}{}
+\cvlanguage{Russian}{Native or bilingual proficiency}{}
 
 \end{document}
